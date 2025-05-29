@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Forever - Dynamic Interactive Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-heart">❤️</div>
+        <div class="floating-star">⭐</div>
+        <div class="floating-smile">😊</div>
+        <div class="floating-heart">💖</div>
+        <div class="floating-star">✨</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>Friendship Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#memories" class="nav-link">Memories</a></li>
+                <li><a href="#quotes" class="nav-link">Quotes</a></li>
+                <li><a href="#games" class="nav-link">Games</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="animated-text">
+                <span class="letter">F</span>
+                <span class="letter">r</span>
+                <span class="letter">i</span>
+                <span class="letter">e</span>
+                <span class="letter">n</span>
+                <span class="letter">d</span>
+                <span class="letter">s</span>
+                <span class="letter">h</span>
+                <span class="letter">i</span>
+                <span class="letter">p</span>
+                <span class="space"></span>
+                <span class="letter">F</span>
+                <span class="letter">o</span>
+                <span class="letter">r</span>
+                <span class="letter">e</span>
+                <span class="letter">v</span>
+                <span class="letter">e</span>
+                <span class="letter">r</span>
+            </h1>
+            <p class="hero-subtitle">Where beautiful memories are created and cherished forever</p>
+            <button class="cta-button" onclick="exploreWebsite()">
+                <span>Explore Our Journey</span>
+                <i class="fas fa-rocket"></i>
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Beautiful Moments</h2>
+            <div class="gallery-container">
+                <div class="gallery-item" data-category="fun">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400" alt="Fun Times">
+                    <div class="overlay">
+                        <h3>Fun Times</h3>
+                        <p>Laughing together</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="adventure">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400" alt="Adventures">
+                    <div class="overlay">
+                        <h3>Adventures</h3>
+                        <p>Exploring the world</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="celebration">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400" alt="Celebrations">
+                    <div class="overlay">
+                        <h3>Celebrations</h3>
+                        <p>Special moments</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400" alt="Nature Trips">
+                    <div class="overlay">
+                        <h3>Nature Trips</h3>
+                        <p>Beautiful landscapes</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="food">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400" alt="Food Adventures">
+                    <div class="overlay">
+                        <h3>Food Adventures</h3>
+                        <p>Tasty memories</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="sports">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400" alt="Sports">
+                    <div class="overlay">
+                        <h3>Sports Together</h3>
+                        <p>Active lifestyle</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fun">Fun</button>
+                <button class="filter-btn" data-filter="adventure">Adventure</button>
+                <button class="filter-btn" data-filter="celebration">Celebration</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memories Timeline -->
+    <section id="memories" class="section">
+        <div class="container">
+            <h2 class="section-title">Memory Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h3>First Meeting</h3>
+                        <p>The day our friendship began with a simple hello that changed everything.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content">
+                        <h3>First Adventure</h3>
+                        <p>Our first trip together - full of laughter, fun, and unforgettable moments.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>Crazy Fun Times</h3>
+                        <p>The year of endless jokes, pranks, and building stronger bonds.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>Growing Together</h3>
+                        <p>Supporting each other through thick and thin, proving true friendship.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Forever Bond</h3>
+                        <p>Celebrating our unbreakable friendship that will last a lifetime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quotes Section -->
+    <section id="quotes" class="section quotes-section">
+        <div class="container">
+            <h2 class="section-title">Friendship Quotes</h2>
+            <div class="quotes-carousel">
+                <div class="quote-card active">
+                    <p>"A real friend is one who walks in when the rest of the world walks out."</p>
+                    <span>- Walter Winchell</span>
+                </div>
+                <div class="quote-card">
+                    <p>"Friendship is the only cement that will ever hold the world together."</p>
+                    <span>- Woodrow Wilson</span>
+                </div>
+                <div class="quote-card">
+                    <p>"A friend is someone who knows all about you and still loves you."</p>
+                    <span>- Elbert Hubbard</span>
+                </div>
+                <div class="quote-card">
+                    <p>"In the sweetness of friendship let there be laughter and sharing of pleasures."</p>
+                    <span>- Khalil Gibran</span>
+                </div>
+            </div>
+            <div class="quote-controls">
+                <button class="prev-quote"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-quote"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="section">
+        <div class="container">
+            <h2 class="section-title">Friendship Games</h2>
+            <div class="games-grid">
+                <div class="game-card" onclick="startMemoryGame()">
+                    <i class="fas fa-brain"></i>
+                    <h3>Memory Match</h3>
+                    <p>Test your memory with our friendship themed memory game</p>
+                </div>
+                <div class="game-card" onclick="startQuizGame()">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>Friendship Quiz</h3>
+                    <p>How well do you know your friends? Take this fun quiz!</p>
+                </div>
+                <div class="game-card" onclick="openPhotoEditor()">
+                    <i class="fas fa-camera"></i>
+                    <h3>Photo Editor</h3>
+                    <p>Create beautiful memories with our photo editing tool</p>
+                </div>
+                <div class="game-card" onclick="openMoodTracker()">
+                    <i class="fas fa-heart"></i>
+                    <h3>Mood Tracker</h3>
+                    <p>Track and share your daily moods with friends</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memory Game Modal -->
+    <div id="memoryGameModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Memory Match Game</h2>
+            <div class="game-board" id="gameBoard"></div>
+            <div class="game-stats">
+                <span>Moves: <span id="moves">0</span></span>
+                <span>Time: <span id="timer">00:00</span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Panel -->
+    <div class="settings-panel" id="settingsPanel">
+        <button class="settings-toggle" onclick="toggleSettings()">
+            <i class="fas fa-cog"></i>
+        </button>
+        <div class="settings-content">
+            <h3>Customize Experience</h3>
+            <div class="setting-item">
+                <label>Background Theme:</label>
+                <select id="themeSelector">
+                    <option value="gradient">Gradient</option>
+                    <option value="stars">Stars</option>
+                    <option value="hearts">Hearts</option>
+                    <option value="rainbow">Rainbow</option>
+                </select>
+            </div>
+            <div class="setting-item">
+                <label>Animation Speed:</label>
+                <input type="range" id="animationSpeed" min="0.5" max="2" step="0.1" value="1">
+            </div>
+            <div class="setting-item">
+                <label>Particle Density:</label>
+                <input type="range" id="particleDensity" min="10" max="100" step="10" value="50">
+            </div>
+            <div class="setting-item">
+                <label>Sound Effects:</label>
+                <input type="checkbox" id="soundEffects" checked>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <button class="music-toggle" onclick="toggleMusic()">
+            <i class="fas fa-music"></i>
+        </button>
+        <audio id="backgroundMusic" loop>
+            <source src="https://www.soundjay.com/misc/sounds/chime_01.wav" type="audio/wav">
+        </audio>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loader">
+            <div class="heart-loader">
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+            </div>
+            <p>Loading Amazing Memories...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
